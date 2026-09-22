@@ -60,6 +60,8 @@ Add the products you want to track. Each entry needs a `store`, a `url`, and a l
 }
 ```
 `store` must be one of: `zara`, `bershka`, `mango`, `pullandbear`.
+**Sizes must match exactly what's shown on the product page** — e.g. `"M"` not `"Medium"`, `"9"` not `"UK 9"`, `"30"` not `"W30"`. For no-size products on Mango, use `"standard"`.
+
 
 ### 4. (Optional) Set up Telegram alerts
 - In Telegram, message **BotFather** and run `/newbot` to create a bot and get an API token.
@@ -82,6 +84,11 @@ python main.py
 
 - `.env` is git-ignored on purpose — never commit real bot tokens there.
 - This scrapes live retail sites via Selenium; site markup can change at any time, which may break a store's scraper.
+
+## Troubleshooting
+
+- **Bot crashes on launch / ChromeDriver errors:** make sure Google Chrome is installed and up to date. `webdriver-manager` downloads a matching ChromeDriver automatically, but it needs a real Chrome install to match against.
+- **A size never shows as in stock even when it should:** double check the size string in `config.json` matches the site's exact label (see step 3 above).
 
 ## Disclaimer
 
