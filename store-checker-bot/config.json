@@ -1,0 +1,28 @@
+{
+  "urls": [
+    {
+      "store": "zara",
+      "url": "https://www.zara.com/ie/en/relaxed-fit-pleated-trousers-p00706950.html?v1=497993608",
+      "sizes": ["29", "30", "31"]
+    },
+    {
+      "store": "zara",
+      "url": "https://www.zara.com/ie/en/retro-style-trainers-p12204720.html?v1=495698331",
+      "sizes": ["8", "9", "10"]
+    },
+    {
+      "store": "zara",
+      "url": "https://www.zara.com/ie/en/trousers-with-label-patch-p00761434.html?v1=505745593",
+      "sizes": ["S", "M"]
+    },
+    {
+      "store": "zara",
+      "url": "https://www.zara.com/ie/en/patch-hoodie-p00761435.html?v1=505745735",
+      "sizes": ["S", "M"]
+    }
+
+    
+  ],
+  "sleep_min_seconds": 15,
+  "sleep_max_seconds": 30
+}
